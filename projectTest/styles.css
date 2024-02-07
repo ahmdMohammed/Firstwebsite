@@ -1,0 +1,179 @@
+/* Reset styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('isorepublic-background-kitchen.jpg') center/cover fixed; /* Set background image for the whole page */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+}
+
+nav li {
+    margin: 0 3px; /* Bootstrap spacing */
+}
+
+nav a {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for better text readability */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific page styles */
+/* Add Recipe page */
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.3333333;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* View Recipes page */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: #333; /* Adjust text color for better visibility on the background */
+}
+
+li h2 {
+    margin-bottom: 5px;
+}
+
+li p strong {
+    margin-right: 5px;
+}
+
+/* About Us page styles */
+main h2,
+main p {
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 1.2em; /* Slightly increased font size for better readability */
+    line-height: 1.8; /* Increased line height for better spacing */
+    color: #333; /* Darkened text color for improved contrast */
+}
+
+main strong,
+main a {
+    color: #4caf50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #008000; /* Darker green on hover for contrast */
+}
+
+main p:last-child {
+    margin-bottom: 20px; /* Increased bottom margin for better spacing between paragraphs */
+}
+
+/* ... Continue with other CSS styles as needed ... */
+
+/* Changing background color effect */
+button[data-color] {
+    transition: background-color 0.3s ease;
+}
+
+button[data-color="1"]:hover {
+    background-color: #FF6347; /* Tomato */
+}
+
+button[data-color="2"]:hover {
+    background-color: #87CEEB; /* SkyBlue */
+}
+
+button[data-color="3"]:hover {
+    background-color: #98FB98; /* PaleGreen */
+}
+
+/* ... Continue with other CSS styles as needed ... */

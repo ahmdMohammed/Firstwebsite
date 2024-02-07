@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<form action="add.php" method="post" enctype="multipart/form-data">
+    <h2>Add a New Recipe</h2>
+    <label for="title">Title:</label>
+    <input type="text" name="title" required><br>
+
+    <label for="description">Description:</label>
+    <textarea name="description" required></textarea><br>
+
+    <label for="preparation_time">Preparation Time (minutes):</label>
+    <input type="number" name="preparation_time" required><br>
+
+    <label for="cooking_time">Cooking Time (minutes):</label>
+    <input type="number" name="cooking_time" required><br>
+
+    <label for="servings">Servings:</label>
+    <input type="number" name="servings" required><br>
+
+
+    <input type="submit" value="Add Recipe">
+    <input type="button" class="btn btn-secondary btn-block" value="Go to Home Page" onclick="goToHomePage()">
+</form>
+
+<script>
+    // Function to redirect to the home page
+    function goToHomePage() {
+        window.location.href = "index.php"; // Replace "index.php" with the URL of your home page
+    }
+</script>
+</body>
+</html>
